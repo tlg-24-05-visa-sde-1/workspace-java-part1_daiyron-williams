@@ -6,6 +6,9 @@ import java.time.LocalDate;
 
 public class HourlyEmployee
         extends Employee {
+
+  public static final double STANDARD_DEDUCTION = 10_000.0;
+
   // properties/fields
   private double rate;
   private double hours;
@@ -34,7 +37,12 @@ public class HourlyEmployee
   @Override
   public void payTaxes() {
     double taxes = getRate() * getHours() * HOURLY_TAX_RATE;
-    System.out.printf("%s paid taxes for %s\n", getName(), taxes);
+    System.out.printf("%s paid hourly taxes for %s\n", getName(), taxes);
+  }
+
+  @Override
+  public double getStandardDeduction() {
+    return STANDARD_DEDUCTION;
   }
 
   // accessor methods

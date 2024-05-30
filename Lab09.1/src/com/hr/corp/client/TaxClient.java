@@ -33,7 +33,7 @@ class TaxClient {
         irs.register(new SalariedEmployee("Tina", LocalDate.of(2000, 2, 2), 1250.0));
         irs.register(new HourlyEmployee("John",   LocalDate.of(2010, 10, 11), 25.0, 40.0));
         irs.register(new SalariedEmployee("Jane", LocalDate.of(2005, 7, 1), 1500.0));
-        irs.register(new Executive("Daiyron", LocalDate.of(2020, 6, 3), 100_000));
+        irs.register(new Executive("Daiyron", LocalDate.of(2020, 6, 3), 1_000_000));
 
 
         // IRS collects taxes
