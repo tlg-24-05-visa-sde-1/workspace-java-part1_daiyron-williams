@@ -49,7 +49,7 @@ public class InMemoryCatalog implements Catalog {
         MusicItem item = null;
 
         for (MusicItem currentItem : catalogData){
-            if(currentItem.getId().equals(id)){
+            if(currentItem.getId().equals(id)){ //  don't compare Long objects with ==
                 item = currentItem;
                 break;
             }
